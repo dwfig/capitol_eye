@@ -1,11 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend of our Mod 3 Project, where the Postgres database will interact with the Rails application that supports our app.
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby version 2.3.3
 
 * System dependencies
 
