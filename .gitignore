@@ -21,3 +21,19 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Database stuff
+/db/*.db
+/db/schema.rb
+
+.env
+# Database stuff
+/db/*.db
+/db/schema.rb
+
+.env
+# Database stuff
+/db/*.db
+/db/schema.rb
+
+.env
