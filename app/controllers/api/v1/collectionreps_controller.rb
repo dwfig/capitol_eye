@@ -1,5 +1,11 @@
 class Api::V1::CollectionrepsController < ApplicationController
 
+  def index
+    @collreps = Collectionrep.all
+
+     render json: @collreps, status: :ok
+  end
+
   def create(collrep_params)
     @collrep = Collectionrep.create(collrep_params)
 
@@ -8,7 +14,7 @@ class Api::V1::CollectionrepsController < ApplicationController
   end
 
   def destroy
-    @collrep = Collection.find(params[:id])
+    @collrep = Collectionrep.find(params[:id])
     @collrep.destroy
   end
 

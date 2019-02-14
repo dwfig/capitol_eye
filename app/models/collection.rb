@@ -1,4 +1,5 @@
 class Collection < ApplicationRecord
-  belongs_to :collectionrep
+  has_many :collectionreps
+  # has_many :representatives, through: :collectionrep
   has_many :representatives, through: :collectionreps
 end

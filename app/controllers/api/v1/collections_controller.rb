@@ -6,11 +6,11 @@ class Api::V1::CollectionsController < ApplicationController
      render json: @collections, status: :ok
   end
 
-  def create(collection_params)
-    @collection = Collection.create(collection_params)
-
-    render json: @collection, status: :ok
-  end
+  # def create(collection_params)
+  #   @collection = Collection.create(collection_params)
+  #
+  #   render json: @collection, status: :ok
+  # end
 
   def edit
     @collection = Collection.find(params[:id])
@@ -28,7 +28,7 @@ class Api::V1::CollectionsController < ApplicationController
   private
 
   def collection_params
-    params.require(:collections).permit(:name)
+    params.require(:collection).permit(:name)
   end
 
 

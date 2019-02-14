@@ -1,4 +1,4 @@
 class Representative < ApplicationRecord
-  belongs_to :collectionrep
-  has_many :collections, through: :collectionreps
+  has_many :collectionrep
+  has_many :collections, through: :collectionrep
 end
