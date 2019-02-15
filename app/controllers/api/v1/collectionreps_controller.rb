@@ -6,7 +6,7 @@ class Api::V1::CollectionrepsController < ApplicationController
      render json: @collreps, status: :ok
   end
 
-  def create(collrep_params)
+  def create
     @collrep = Collectionrep.create(collrep_params)
 
     render json: @collrep, status: :ok
